@@ -1,0 +1,7 @@
+# Python
+__pycache__/
+*.pyc
+
+# Test artifacts
+test_kotler_v1.json
+artifacts/
