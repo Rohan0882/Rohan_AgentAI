@@ -1,0 +1,19 @@
+# Placeholder configuration for deploying the agent to a cloud platform (e.g., Google Cloud Run)
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: kotler-case-analyst-agent
+spec:
+  template:
+    spec:
+      containers:
+        - image: gcr.io/your-gcp-project-id/kotler-agent # Replace with your container registry path
+          ports:
+            - containerPort: 5000
+          resources:
+            limits:
+              cpu: "1000m"
+              memory: "512Mi"
+          env:
+            - name: FLASK_ENV
+              value: "production"

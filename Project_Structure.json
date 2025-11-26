@@ -1,0 +1,39 @@
+{
+  "name": "Kotler_Case_Study_Analyst",
+  "version": "1.0.0",
+  "description": "An agentic system for analyzing marketing case studies using Kotler's frameworks.",
+  "directories": [
+    "kotler_mcp_server",
+    "tests",
+    "artifacts"
+  ],
+  "files": {
+    "kotler_mcp_server": [
+      "__init__.py",
+      "Kotler_MCP_Server.py",
+      "func_SWOT_Analyzer.py",
+      "func_Market_Segmenter.py",
+      "func_FourPs_Mix.py",
+      "func_Kotler_RAG.py",
+      "func_Map_Analyzer.py",
+      "func_External_Context.py"
+    ],
+    "tests": [
+      "test_kotler_v2.py",
+      "test_validation_suite.py"
+    ],
+    "root": [
+      ".gitignore",
+      "Case_Analysis_Artifact_Schema.json",
+      "Dockerfile",
+      "Final_System_Prompt.md",
+      "Project_Structure.json",
+      "README.md",
+      "System_Prompt_V1.md",
+      "System_Prompt_V2.md",
+      "Workflow_Plan_V2.md",
+      "deployment.yaml",
+      "requirements.txt"
+    ]
+  }
+}
